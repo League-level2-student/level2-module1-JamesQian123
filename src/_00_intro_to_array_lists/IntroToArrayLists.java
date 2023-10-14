@@ -19,11 +19,27 @@ public class IntroToArrayLists {
 			System.out.println(w);
 		}
 		//4. Print all the Strings using a for-each loop
-		
+		for(String word: words) {
+			System.out.println(words);
+		}
 		//5. Print only the even numbered elements in the list.
-		
+		for(int i = 1; i<words.size();i+=2) {
+			String j = words.get(i);
+			System.out.println(j);
+		}
 		//6. Print all the Strings in reverse order.
-		
+		for(int i = words.size()-1;i>=0;i-- ) {
+			String k = words.get(i);
+			System.out.println(k);
+		}
 		//7. Print only the Strings that have the letter 'e' in them.
+		for(String s: words) {
+			for(int i = 0; i < s.length(); i++) {
+				char c = s.charAt(i);
+				if(c == 'o') {
+					System.out.println(words.get(i));
+					
+			}
+		}
 	}
-}
+}}
